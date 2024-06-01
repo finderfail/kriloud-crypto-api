@@ -1,0 +1,11 @@
+{
+  "name": "crypto-api",
+  "version": "1.0.0",
+  "description": "Simple demo lib to show how to use my crypto lib",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "finderfail",
+  "license": "ISC"
+}
