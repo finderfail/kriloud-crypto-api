@@ -2,7 +2,8 @@ const { encrypt, decrypt } = require("./crypto");
 // Copyright Ilia Finderov 2024 at Kriloud
 
 console.log("Welcome to simple coder and encoder cli app\n This app using Kriloud crypto library.\n");
-prompt('First you need to choose "Decrypt" or "Encrypt": ', function (answ) {
+console.log("\n");
+prompt('First you need to choose "decrypt" or "encrypt": ', function (answ) {
     if (answ == "decrypt") {
         prompt('You choose Decrypt so type crypted thing: ', function (xsr){
             console.log(decrypt(xsr));
@@ -16,6 +17,7 @@ prompt('First you need to choose "Decrypt" or "Encrypt": ', function (answ) {
     } else {console.log("You typed something strange.");}
     
 });
+
 function prompt(question, callback) {
     var stdin = process.stdin,
         stdout = process.stdout;
